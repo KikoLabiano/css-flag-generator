@@ -1,0 +1,106 @@
+h1 {
+  font-family: Impact;
+}
+
+.flag tr td{
+  background-color: white;
+  color:white;
+}
+.flag tr:first-child td{
+  border-top: 2px solid black;
+}
+.flag tr:last-child td{
+  border-bottom: 2px solid black;
+}
+.flag tr td:first-child{
+  border-left: 2px solid black;
+}
+.flag tr td:last-child{
+  border-right: 2px solid black;
+}
+
+/*US-FLAG*/
+.us-flag tr:nth-of-type(odd) td{
+  background-color: #B22234;
+  color: #B22234;
+}
+
+.us-flag tr:nth-child(-n+7) td:nth-child(-n+9){
+  background-color: #3C3B6E;
+  color:#3C3B6E;
+  font-size: 0;
+}
+.us-flag tr:nth-child(-n+7) td:nth-child(-n+9):after{
+  content:'\2605';
+  color: white;
+  font-size: 15px;
+}
+.us-flag tr:nth-of-type(-2n+7) td:after {
+	position: relative; left: 25%;
+}
+
+/*RUSSIAN-FLAG*/
+.ru-flag tr:nth-last-child(-n+9) td{
+  background-color: #0039A6;
+  color: #0039A6;
+}
+.ru-flag tr:nth-last-child(-n+4) td{
+  background-color: #D52B1E;
+  color: #D52B1E;
+}
+
+/*SPANISH-FLAG*/
+.sp-flag tr:nth-last-child(-n+4) td{
+  background-color: #C60B1E;
+  color: #C60B1E;
+}
+.sp-flag tr:nth-child(n+1):nth-child(-n+4) td{
+  background-color: #C60B1E;
+  color: #C60B1E;
+}
+.sp-flag tr:nth-child(n+5):nth-child(-n+9) td{
+  background-color: #FFC400;
+  color: #FFC400;
+}
+
+.sp-flag tr:nth-child(7) td:nth-child(5){
+  color: transparent;
+  background-image: url("./img/spain.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: scale(4.5);
+}
+
+/*FRANCE-FLAG*/
+.fr-flag tr td:nth-child(-n+5){
+  background-color: #002395;
+  color: #002395;
+}
+.fr-flag tr td:nth-child(n+12){
+  background-color: #ED2939;
+  color: #ED2939;
+}
+
+/*ENGLISH-FLAG*/
+.en-flag tr td:nth-child(n+8):nth-child(-n+9){
+  background-color: #CF081F;
+  color: #CF081F;
+}
+.en-flag tr:nth-child(n+6):nth-child(-n+8) td{
+  background-color: #CF081F;
+  color: #CF081F;
+}
+
+/*TURKISH-FLAG*/
+.tu-flag tr td{
+    background-color: #E30A17;
+    color: #E30A17;
+}
+
+.tu-flag tr:nth-child(7) td:nth-child(7){
+  color: transparent;
+  background-image: url("./img/turkey.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: scale(7.5);
+}
